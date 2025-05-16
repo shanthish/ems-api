@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json());
 
 app.use(cors({
-  origin: 'http://localhost:5173', // or "*" for all origins (not recommended for production)
+  origin: 'https://ems-frontend-inky-zeta.vercel.app', // or "*" for all origins (not recommended for production)
   credentials: true
 }));
 app.use(express.static('public/uploads'));
